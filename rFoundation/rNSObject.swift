@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import rStreams
+import rKit
 
 public extension NSObject {
   

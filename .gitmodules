@@ -1,0 +1,3 @@
+[submodule "Carthage/Checkouts/rKit"]
+	path = Carthage/Checkouts/rKit
+	url = https://github.com/ReactiveKit/rKit.git

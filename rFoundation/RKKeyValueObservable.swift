@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import rStreams
+import rKit
 
 public class RKKeyValueObservable<T>: NSObject, StreamType {
   private var strongObject: NSObject? = nil

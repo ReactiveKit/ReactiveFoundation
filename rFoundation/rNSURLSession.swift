@@ -6,8 +6,7 @@
 //  Copyright © 2015 Srdan Rasic. All rights reserved.
 //
 
-import rStreams
-import rTasks
+import rKit
 import Foundation
 
 public extension NSURLSession {

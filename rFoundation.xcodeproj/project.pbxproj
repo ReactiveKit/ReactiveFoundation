@@ -7,15 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		169305401BE69D7000766E55 /* rTasks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1693053F1BE69D7000766E55 /* rTasks.framework */; };
 		16F2A9131BDCF86500AA0B5F /* rFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 16F2A9121BDCF86500AA0B5F /* rFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		16F2A91A1BDCF86500AA0B5F /* rFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16F2A90F1BDCF86500AA0B5F /* rFoundation.framework */; };
 		16F2A91F1BDCF86500AA0B5F /* rFoundationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F2A91E1BDCF86500AA0B5F /* rFoundationTests.swift */; };
 		16F2A92A1BDCFF0600AA0B5F /* rNSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F2A9291BDCFF0600AA0B5F /* rNSObject.swift */; };
 		16F2A92C1BDCFF1100AA0B5F /* rNSURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F2A92B1BDCFF1100AA0B5F /* rNSURLSession.swift */; };
 		16F2A92E1BDCFF4C00AA0B5F /* rNSNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F2A92D1BDCFF4C00AA0B5F /* rNSNotificationCenter.swift */; };
-		16F2A9301BDD071200AA0B5F /* rStreams.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16F2A92F1BDD071200AA0B5F /* rStreams.framework */; };
 		ECF535C61BE8A3B300015674 /* RKKeyValueObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF535C51BE8A3B300015674 /* RKKeyValueObservable.swift */; settings = {ASSET_TAGS = (); }; };
+		ECF537061BE8FE1C00015674 /* rKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF537051BE8FE1C00015674 /* rKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +28,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1693053F1BE69D7000766E55 /* rTasks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = rTasks.framework; path = "../rTasks/build/Debug-iphoneos/rTasks.framework"; sourceTree = "<group>"; };
 		16F2A90F1BDCF86500AA0B5F /* rFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = rFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16F2A9121BDCF86500AA0B5F /* rFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rFoundation.h; sourceTree = "<group>"; };
 		16F2A9141BDCF86500AA0B5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -39,8 +37,8 @@
 		16F2A9291BDCFF0600AA0B5F /* rNSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rNSObject.swift; sourceTree = "<group>"; };
 		16F2A92B1BDCFF1100AA0B5F /* rNSURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rNSURLSession.swift; sourceTree = "<group>"; };
 		16F2A92D1BDCFF4C00AA0B5F /* rNSNotificationCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rNSNotificationCenter.swift; sourceTree = "<group>"; };
-		16F2A92F1BDD071200AA0B5F /* rStreams.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = rStreams.framework; path = "../rStreams/build/Debug-iphoneos/rStreams.framework"; sourceTree = "<group>"; };
 		ECF535C51BE8A3B300015674 /* RKKeyValueObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKKeyValueObservable.swift; sourceTree = "<group>"; };
+		ECF537051BE8FE1C00015674 /* rKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = rKit.framework; path = Carthage/Build/iOS/rKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,8 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				169305401BE69D7000766E55 /* rTasks.framework in Frameworks */,
-				16F2A9301BDD071200AA0B5F /* rStreams.framework in Frameworks */,
+				ECF537061BE8FE1C00015674 /* rKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,8 +64,7 @@
 		16F2A9051BDCF86500AA0B5F = {
 			isa = PBXGroup;
 			children = (
-				1693053F1BE69D7000766E55 /* rTasks.framework */,
-				16F2A92F1BDD071200AA0B5F /* rStreams.framework */,
+				ECF537051BE8FE1C00015674 /* rKit.framework */,
 				16F2A9111BDCF86500AA0B5F /* rFoundation */,
 				16F2A91D1BDCF86500AA0B5F /* rFoundationTests */,
 				16F2A9101BDCF86500AA0B5F /* Products */,
@@ -337,6 +333,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = rFoundation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -355,6 +355,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = rFoundation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
