@@ -39,13 +39,6 @@
 			remoteGlobalIDString = ECF536B61BE8F4C000015674;
 			remoteInfo = rKitTests;
 		};
-		ECB554E01BE9F7A700A1D267 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ECB554D71BE9F7A000A1D267 /* rKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = ECF536AB1BE8F4C000015674;
-			remoteInfo = rKit;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -166,7 +159,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				ECB554E11BE9F7A700A1D267 /* PBXTargetDependency */,
 			);
 			name = rFoundation;
 			productName = rFoundation;
@@ -294,11 +286,6 @@
 			isa = PBXTargetDependency;
 			target = 16F2A90E1BDCF86500AA0B5F /* rFoundation */;
 			targetProxy = 16F2A91B1BDCF86500AA0B5F /* PBXContainerItemProxy */;
-		};
-		ECB554E11BE9F7A700A1D267 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = rKit;
-			targetProxy = ECB554E01BE9F7A700A1D267 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
