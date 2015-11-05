@@ -14,7 +14,7 @@ let user = ObjCUserClass()
 
 user.rValueForKeyPath("name").observe { (name: String?) in
   print(name)
-}
+}.disposeIn(rBag)
 
 user.rValueForKeyPath("name").bindTo(nameLabel.rText)
 ```
