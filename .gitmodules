@@ -1,3 +1,3 @@
-[submodule "rKit"]
-	path = rKit
-	url = git@github.com:ReactiveKit/rKit.git
+[submodule "ReactiveKit"]
+	path = ReactiveKit
+	url = git@github.com:ReactiveKit/ReactiveKit.git

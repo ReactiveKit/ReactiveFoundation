@@ -22,14 +22,14 @@
 //  THE SOFTWARE.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-//! Project version number for rFoundation.
-FOUNDATION_EXPORT double rFoundationVersionNumber;
+//! Project version number for ReactiveFoundation.
+FOUNDATION_EXPORT double ReactiveFoundationVersionNumber;
 
-//! Project version string for rFoundation.
-FOUNDATION_EXPORT const unsigned char rFoundationVersionString[];
+//! Project version string for ReactiveFoundation.
+FOUNDATION_EXPORT const unsigned char ReactiveFoundationVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <rFoundation/PublicHeader.h>
+// In this header, you should import all the public headers of your framework using statements like #import <ReactiveFoundation/PublicHeader.h>
 
 

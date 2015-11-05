@@ -22,15 +22,15 @@
 //  THE SOFTWARE.
 //
 
-import rKit
+import ReactiveKit
 import Foundation
 
 public extension NSURLSession {
   
-  public func rDataTaskWithRequest(request: NSURLRequest) -> Task<(NSData?, NSURLResponse?), NSError> {
+  public func rDataOperationWithRequest(request: NSURLRequest) -> Operation<(NSData?, NSURLResponse?), NSError> {
     return create { sink in
       
-      let task = NSURLSession.sharedSession().dataTaskWithRequest(request) {
+      let Operation = NSURLSession.sharedSession().dataTaskWithRequest(request) {
         data, response, error in
         
         if let error = error {
@@ -41,18 +41,18 @@ public extension NSURLSession {
         }
       }
       
-      task.resume()
+      Operation.resume()
       
       return BlockDisposable {
-        task.cancel()
+        Operation.cancel()
       }
     }
   }
   
-  public func rDataTaskWithURL(url: NSURL) -> Task<(NSData?, NSURLResponse?), NSError> {
+  public func rDataOperationWithURL(url: NSURL) -> Operation<(NSData?, NSURLResponse?), NSError> {
     return create { sink in
       
-      let task = NSURLSession.sharedSession().dataTaskWithURL(url) {
+      let Operation = NSURLSession.sharedSession().dataTaskWithURL(url) {
         data, response, error in
         
         if let error = error {
@@ -63,18 +63,18 @@ public extension NSURLSession {
         }
       }
       
-      task.resume()
+      Operation.resume()
       
       return BlockDisposable {
-        task.cancel()
+        Operation.cancel()
       }
     }
   }
   
-  public func rUploadTaskWithRequest(request: NSURLRequest, fromFile fileURL: NSURL) -> Task<(NSData?, NSURLResponse?), NSError> {
+  public func rUploadOperationWithRequest(request: NSURLRequest, fromFile fileURL: NSURL) -> Operation<(NSData?, NSURLResponse?), NSError> {
     return create { sink in
       
-      let task = NSURLSession.sharedSession().uploadTaskWithRequest(request, fromFile: fileURL) {
+      let Operation = NSURLSession.sharedSession().uploadTaskWithRequest(request, fromFile: fileURL) {
         data, response, error in
         
         if let error = error {
@@ -85,18 +85,18 @@ public extension NSURLSession {
         }
       }
       
-      task.resume()
+      Operation.resume()
       
       return BlockDisposable {
-        task.cancel()
+        Operation.cancel()
       }
     }
   }
   
-  public func rUploadTaskWithRequest(request: NSURLRequest, fromData bodyData: NSData?) -> Task<(NSData?, NSURLResponse?), NSError> {
+  public func rUploadOperationWithRequest(request: NSURLRequest, fromData bodyData: NSData?) -> Operation<(NSData?, NSURLResponse?), NSError> {
     return create { sink in
       
-      let task = NSURLSession.sharedSession().uploadTaskWithRequest(request, fromData: bodyData) {
+      let Operation = NSURLSession.sharedSession().uploadTaskWithRequest(request, fromData: bodyData) {
         data, response, error in
         
         if let error = error {
@@ -107,18 +107,18 @@ public extension NSURLSession {
         }
       }
       
-      task.resume()
+      Operation.resume()
       
       return BlockDisposable {
-        task.cancel()
+        Operation.cancel()
       }
     }
   }
   
-  public func rDownloadTaskWithRequest(request: NSURLRequest) -> Task<(NSURL?, NSURLResponse?), NSError> {
+  public func rDownloadOperationWithRequest(request: NSURLRequest) -> Operation<(NSURL?, NSURLResponse?), NSError> {
     return create { sink in
       
-      let task = NSURLSession.sharedSession().downloadTaskWithRequest(request) {
+      let Operation = NSURLSession.sharedSession().downloadTaskWithRequest(request) {
         url, response, error in
         
         if let error = error {
@@ -129,18 +129,18 @@ public extension NSURLSession {
         }
       }
       
-      task.resume()
+      Operation.resume()
       
       return BlockDisposable {
-        task.cancel()
+        Operation.cancel()
       }
     }
   }
   
-  public func rDownloadTaskWithURL(url: NSURL) -> Task<(NSURL?, NSURLResponse?), NSError> {
+  public func rDownloadOperationWithURL(url: NSURL) -> Operation<(NSURL?, NSURLResponse?), NSError> {
     return create { sink in
       
-      let task = NSURLSession.sharedSession().downloadTaskWithURL(url) {
+      let Operation = NSURLSession.sharedSession().downloadTaskWithURL(url) {
         url, response, error in
         
         if let error = error {
@@ -151,18 +151,18 @@ public extension NSURLSession {
         }
       }
       
-      task.resume()
+      Operation.resume()
       
       return BlockDisposable {
-        task.cancel()
+        Operation.cancel()
       }
     }
   }
   
-  public func rDownloadTaskWithResumeData(resumeData: NSData) -> Task<(NSURL?, NSURLResponse?), NSError> {
+  public func rDownloadOperationWithResumeData(resumeData: NSData) -> Operation<(NSURL?, NSURLResponse?), NSError> {
     return create { sink in
       
-      let task = NSURLSession.sharedSession().downloadTaskWithResumeData(resumeData) {
+      let Operation = NSURLSession.sharedSession().downloadTaskWithResumeData(resumeData) {
         url, response, error in
         
         if let error = error {
@@ -173,10 +173,10 @@ public extension NSURLSession {
         }
       }
       
-      task.resume()
+      Operation.resume()
       
       return BlockDisposable {
-        task.cancel()
+        Operation.cancel()
       }
     }
   }

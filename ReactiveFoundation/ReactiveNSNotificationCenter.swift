@@ -22,26 +22,19 @@
 //  THE SOFTWARE.
 //
 
-import XCTest
-@testable import rFoundation
+import ReactiveKit
+import Foundation
 
-class rFoundationTests: XCTestCase {
-
-  override func setUp() {
-    super.setUp()
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-  }
+extension NSNotificationCenter {
   
-  override func tearDown() {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    super.tearDown()
-  }
-  
-  func testPerformanceExample() {
-    // This is an example of a performance test case.
-    self.measureBlock {
-      // Put the code you want to measure the time of here.
+  public func rNotification(name: String, object: AnyObject?) -> Stream<NSNotification> {
+    return create { sink in
+      let subscription = NSNotificationCenter.defaultCenter().addObserverForName(name, object: object, queue: nil, usingBlock: { notification in
+        sink(notification)
+      })
+      return BlockDisposable {
+        NSNotificationCenter.defaultCenter().removeObserver(subscription)
+      }
     }
   }
 }
-

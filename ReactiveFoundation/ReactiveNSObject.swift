@@ -22,7 +22,7 @@
 //  THE SOFTWARE.
 //
 
-import rKit
+import ReactiveKit
 import Foundation
 
 public extension NSObject {
