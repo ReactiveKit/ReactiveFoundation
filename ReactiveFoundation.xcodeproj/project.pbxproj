@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EC0B0F271BEB705E009EF199 /* ReactiveKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0B0F241BEB7052009EF199 /* ReactiveKit.framework */; };
+		1666E5181BED0CCE0099C86E /* ReactiveKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1666E5171BED0CCE0099C86E /* ReactiveKit.framework */; };
 		ECBCCE421BEB6E2B00723476 /* ReactiveFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = ECBCCE411BEB6E2B00723476 /* ReactiveFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ECBCCE491BEB6E2B00723476 /* ReactiveFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECBCCE3E1BEB6E2B00723476 /* ReactiveFoundation.framework */; };
 		ECBCCE4E1BEB6E2B00723476 /* ReactiveFoundationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCCE4D1BEB6E2B00723476 /* ReactiveFoundationTests.swift */; };
@@ -18,20 +18,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EC0B0F231BEB7052009EF199 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EC0B0F1E1BEB7052009EF199 /* ReactiveKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ECBCCDD01BEB6B9A00723476;
-			remoteInfo = ReactiveKit;
-		};
-		EC0B0F251BEB7052009EF199 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EC0B0F1E1BEB7052009EF199 /* ReactiveKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ECBCCDDA1BEB6B9B00723476;
-			remoteInfo = ReactiveKitTests;
-		};
 		ECBCCE4A1BEB6E2B00723476 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ECBCCE351BEB6E2B00723476 /* Project object */;
@@ -42,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EC0B0F1E1BEB7052009EF199 /* ReactiveKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveKit.xcodeproj; path = ReactiveKit/ReactiveKit.xcodeproj; sourceTree = "<group>"; };
+		1666E5171BED0CCE0099C86E /* ReactiveKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveKit.framework; path = "../ReactiveKit/build/Debug-iphoneos/ReactiveKit.framework"; sourceTree = "<group>"; };
 		ECBCCE3E1BEB6E2B00723476 /* ReactiveFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECBCCE411BEB6E2B00723476 /* ReactiveFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveFoundation.h; sourceTree = "<group>"; };
 		ECBCCE431BEB6E2B00723476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC0B0F271BEB705E009EF199 /* ReactiveKit.framework in Frameworks */,
+				1666E5181BED0CCE0099C86E /* ReactiveKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,18 +64,9 @@
 		EC0B0F1D1BEB7040009EF199 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				EC0B0F1E1BEB7052009EF199 /* ReactiveKit.xcodeproj */,
+				1666E5171BED0CCE0099C86E /* ReactiveKit.framework */,
 			);
 			name = Dependencies;
-			sourceTree = "<group>";
-		};
-		EC0B0F1F1BEB7052009EF199 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EC0B0F241BEB7052009EF199 /* ReactiveKit.framework */,
-				EC0B0F261BEB7052009EF199 /* ReactiveKitTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		ECBCCE341BEB6E2B00723476 = {
@@ -213,12 +190,6 @@
 			mainGroup = ECBCCE341BEB6E2B00723476;
 			productRefGroup = ECBCCE3F1BEB6E2B00723476 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = EC0B0F1F1BEB7052009EF199 /* Products */;
-					ProjectRef = EC0B0F1E1BEB7052009EF199 /* ReactiveKit.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				ECBCCE3D1BEB6E2B00723476 /* ReactiveFoundation */,
@@ -226,23 +197,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		EC0B0F241BEB7052009EF199 /* ReactiveKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ReactiveKit.framework;
-			remoteRef = EC0B0F231BEB7052009EF199 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EC0B0F261BEB7052009EF199 /* ReactiveKitTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ReactiveKitTests.xctest;
-			remoteRef = EC0B0F251BEB7052009EF199 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		ECBCCE3C1BEB6E2B00723476 /* Resources */ = {
