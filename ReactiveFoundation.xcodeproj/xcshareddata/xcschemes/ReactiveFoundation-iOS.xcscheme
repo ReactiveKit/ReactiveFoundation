@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "ECBCCE3D1BEB6E2B00723476"
                BuildableName = "ReactiveFoundation.framework"
-               BlueprintName = "ReactiveFoundation"
+               BlueprintName = "ReactiveFoundation-iOS"
                ReferencedContainer = "container:ReactiveFoundation.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,7 +44,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ECBCCE3D1BEB6E2B00723476"
             BuildableName = "ReactiveFoundation.framework"
-            BlueprintName = "ReactiveFoundation"
+            BlueprintName = "ReactiveFoundation-iOS"
             ReferencedContainer = "container:ReactiveFoundation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -66,7 +66,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ECBCCE3D1BEB6E2B00723476"
             BuildableName = "ReactiveFoundation.framework"
-            BlueprintName = "ReactiveFoundation"
+            BlueprintName = "ReactiveFoundation-iOS"
             ReferencedContainer = "container:ReactiveFoundation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -84,7 +84,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ECBCCE3D1BEB6E2B00723476"
             BuildableName = "ReactiveFoundation.framework"
-            BlueprintName = "ReactiveFoundation"
+            BlueprintName = "ReactiveFoundation-iOS"
             ReferencedContainer = "container:ReactiveFoundation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
