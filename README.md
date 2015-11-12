@@ -1,13 +1,8 @@
-# ReactiveKit
+# ReactiveFoundation
 
-__ReactiveKit__ is a collection of Swift frameworks for reactive and functional reactive programming.
+ReactiveFoundation is a framework from ReactiveKit collection of frameworks that extends NSObject objects with type-safe KVO support and NSNotificationCentar with reactive observing mechanism. Consult ReactiveKit documentation to learn how to work with the Observables it provides.
 
-* [ReactiveKit](https://github.com/ReactiveKit/ReactiveKit) - A core framework that provides cold Stream and hot ActiveStream types and their derivatives -  Operation, Observable and ObservableCollection types.
-* [ReactiveFoundation](https://github.com/ReactiveKit/ReactiveFoundation) - Foundation framework extensions like type-safe KVO.
-* [ReactiveUIKit](https://github.com/ReactiveKit/ReactiveUIKit) - UIKit extensions (bindings).
-
-## ReactiveFoundation
-### KVO
+## Key-Value Observing
 
 ```swift
 let user = ObjCUserClass()
@@ -19,8 +14,9 @@ user.rValueForKeyPath("name").observe { (name: String?) in
 user.rValueForKeyPath("name").bindTo(nameLabel.rText)
 ```
 
-### NSNotificationCenter
+> Observing KVO-observable will be active as long as the returned disposable is alive. Make sure you store the disposable when using `observe` method on KVO-observable. You don't need to store the disposable when using `bindTo` method. Binding will be automatically disposed when the bindable target (i.e. view) is deallocated.
 
+### NSNotificationCenter
 
 ```swift
 NSNotificationCenter.defaultCenter().rNotification("MyNotification").observe { notification in
@@ -29,12 +25,20 @@ NSNotificationCenter.defaultCenter().rNotification("MyNotification").observe { n
 
 ```
 
+> Make sure you always dispose observation when it's no longer necessary. Simples way it to put the disposable into the disposable bag on the object that has initiated observation.
+
 ### rBag
 
-Dispose bag is provided by any NSObject subclass and it is disposed when the object is deallocated. Use it to cleanup your observers.
-
+Dispose bag is provided by NSObject and all its subclasses and it is disposed when the object is deallocated. Use this to cleanup your observations.
 
 ## Installation
+
+### CocoaPods
+
+```
+pod 'ReactiveKit', '~> 1.0'
+pod 'ReactiveFoundation', '~> 1.0'
+```
 
 ### Carthage
 
@@ -42,7 +46,6 @@ Dispose bag is provided by any NSObject subclass and it is disposed when the obj
 github "ReactiveKit/ReactiveKit" 
 github "ReactiveKit/ReactiveFoundation"
 ```
-
 
 ## License
 
