@@ -13,15 +13,12 @@
 		EC9549A01BF1EF23000FC2BF /* ReactiveFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = ECBCCE411BEB6E2B00723476 /* ReactiveFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EC9549A11BF1EF3E000FC2BF /* ReactiveNSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCCE591BEB6E8700723476 /* ReactiveNSObject.swift */; };
 		EC9549A21BF1EF3E000FC2BF /* ReactiveNSNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCCE581BEB6E8700723476 /* ReactiveNSNotificationCenter.swift */; };
-		EC9549A31BF1EF3E000FC2BF /* ReactiveNSURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCCE5A1BEB6E8700723476 /* ReactiveNSURLSession.swift */; };
 		EC9549A41BF1EF3E000FC2BF /* RKKeyValueObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCCE5B1BEB6E8700723476 /* RKKeyValueObservable.swift */; };
 		EC9549A91BF1EF3F000FC2BF /* ReactiveNSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCCE591BEB6E8700723476 /* ReactiveNSObject.swift */; };
 		EC9549AA1BF1EF3F000FC2BF /* ReactiveNSNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCCE581BEB6E8700723476 /* ReactiveNSNotificationCenter.swift */; };
-		EC9549AB1BF1EF3F000FC2BF /* ReactiveNSURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCCE5A1BEB6E8700723476 /* ReactiveNSURLSession.swift */; };
 		EC9549AC1BF1EF3F000FC2BF /* RKKeyValueObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCCE5B1BEB6E8700723476 /* RKKeyValueObservable.swift */; };
 		EC9549AD1BF1EF40000FC2BF /* ReactiveNSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCCE591BEB6E8700723476 /* ReactiveNSObject.swift */; };
 		EC9549AE1BF1EF40000FC2BF /* ReactiveNSNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCCE581BEB6E8700723476 /* ReactiveNSNotificationCenter.swift */; };
-		EC9549AF1BF1EF40000FC2BF /* ReactiveNSURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCCE5A1BEB6E8700723476 /* ReactiveNSURLSession.swift */; };
 		EC9549B01BF1EF40000FC2BF /* RKKeyValueObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCCE5B1BEB6E8700723476 /* RKKeyValueObservable.swift */; };
 		EC9549B21BF1EF51000FC2BF /* ReactiveKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9549B11BF1EF51000FC2BF /* ReactiveKit.framework */; };
 		EC9549B71BF1EFC1000FC2BF /* ReactiveKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9549B61BF1EFC1000FC2BF /* ReactiveKit.framework */; };
@@ -31,7 +28,6 @@
 		ECBCCE4E1BEB6E2B00723476 /* ReactiveFoundationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCCE4D1BEB6E2B00723476 /* ReactiveFoundationTests.swift */; };
 		ECBCCE5C1BEB6E8700723476 /* ReactiveNSNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCCE581BEB6E8700723476 /* ReactiveNSNotificationCenter.swift */; };
 		ECBCCE5D1BEB6E8700723476 /* ReactiveNSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCCE591BEB6E8700723476 /* ReactiveNSObject.swift */; };
-		ECBCCE5E1BEB6E8700723476 /* ReactiveNSURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCCE5A1BEB6E8700723476 /* ReactiveNSURLSession.swift */; };
 		ECBCCE5F1BEB6E8700723476 /* RKKeyValueObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBCCE5B1BEB6E8700723476 /* RKKeyValueObservable.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16E1259F1BF5039300543EFB /* ReactiveFoundation.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ReactiveFoundation.podspec; sourceTree = "<group>"; };
+		16E125A01BF5039700543EFB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EC9549741BF1EDE5000FC2BF /* ReactiveKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveKit.framework; path = "ReactiveKit/build/Debug-iphoneos/ReactiveKit.framework"; sourceTree = "<group>"; };
 		EC95497C1BF1EE70000FC2BF /* ReactiveFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC95498A1BF1EEB5000FC2BF /* ReactiveFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,7 +59,6 @@
 		ECBCCE4F1BEB6E2B00723476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECBCCE581BEB6E8700723476 /* ReactiveNSNotificationCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveNSNotificationCenter.swift; sourceTree = "<group>"; };
 		ECBCCE591BEB6E8700723476 /* ReactiveNSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveNSObject.swift; sourceTree = "<group>"; };
-		ECBCCE5A1BEB6E8700723476 /* ReactiveNSURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveNSURLSession.swift; sourceTree = "<group>"; };
 		ECBCCE5B1BEB6E8700723476 /* RKKeyValueObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKKeyValueObservable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +120,8 @@
 		ECBCCE341BEB6E2B00723476 = {
 			isa = PBXGroup;
 			children = (
+				16E125A01BF5039700543EFB /* README.md */,
+				16E1259F1BF5039300543EFB /* ReactiveFoundation.podspec */,
 				ECBCCE401BEB6E2B00723476 /* ReactiveFoundation */,
 				ECBCCE4C1BEB6E2B00723476 /* ReactiveFoundationTests */,
 				EC9549761BF1EDEC000FC2BF /* Dependencies */,
@@ -148,7 +147,6 @@
 				ECBCCE411BEB6E2B00723476 /* ReactiveFoundation.h */,
 				ECBCCE591BEB6E8700723476 /* ReactiveNSObject.swift */,
 				ECBCCE581BEB6E8700723476 /* ReactiveNSNotificationCenter.swift */,
-				ECBCCE5A1BEB6E8700723476 /* ReactiveNSURLSession.swift */,
 				ECBCCE5B1BEB6E8700723476 /* RKKeyValueObservable.swift */,
 				ECBCCE431BEB6E2B00723476 /* Info.plist */,
 			);
@@ -304,7 +302,6 @@
 				TargetAttributes = {
 					EC95497B1BF1EE70000FC2BF = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = 7483NBERMM;
 					};
 					EC9549891BF1EEB5000FC2BF = {
 						CreatedOnToolsVersion = 7.1;
@@ -315,7 +312,6 @@
 					};
 					ECBCCE3D1BEB6E2B00723476 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = 7483NBERMM;
 					};
 					ECBCCE471BEB6E2B00723476 = {
 						CreatedOnToolsVersion = 7.1;
@@ -390,7 +386,6 @@
 				EC9549A11BF1EF3E000FC2BF /* ReactiveNSObject.swift in Sources */,
 				EC9549A41BF1EF3E000FC2BF /* RKKeyValueObservable.swift in Sources */,
 				EC9549A21BF1EF3E000FC2BF /* ReactiveNSNotificationCenter.swift in Sources */,
-				EC9549A31BF1EF3E000FC2BF /* ReactiveNSURLSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,7 +396,6 @@
 				EC9549A91BF1EF3F000FC2BF /* ReactiveNSObject.swift in Sources */,
 				EC9549AC1BF1EF3F000FC2BF /* RKKeyValueObservable.swift in Sources */,
 				EC9549AA1BF1EF3F000FC2BF /* ReactiveNSNotificationCenter.swift in Sources */,
-				EC9549AB1BF1EF3F000FC2BF /* ReactiveNSURLSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,7 +406,6 @@
 				EC9549AD1BF1EF40000FC2BF /* ReactiveNSObject.swift in Sources */,
 				EC9549B01BF1EF40000FC2BF /* RKKeyValueObservable.swift in Sources */,
 				EC9549AE1BF1EF40000FC2BF /* ReactiveNSNotificationCenter.swift in Sources */,
-				EC9549AF1BF1EF40000FC2BF /* ReactiveNSURLSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,7 +416,6 @@
 				ECBCCE5D1BEB6E8700723476 /* ReactiveNSObject.swift in Sources */,
 				ECBCCE5F1BEB6E8700723476 /* RKKeyValueObservable.swift in Sources */,
 				ECBCCE5C1BEB6E8700723476 /* ReactiveNSNotificationCenter.swift in Sources */,
-				ECBCCE5E1BEB6E8700723476 /* ReactiveNSURLSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +441,7 @@
 		EC9549821BF1EE70000FC2BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -468,6 +461,7 @@
 		EC9549831BF1EE70000FC2BF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -659,6 +653,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -677,6 +672,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -720,6 +716,7 @@
 				EC9549831BF1EE70000FC2BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC95498F1BF1EEB5000FC2BF /* Build configuration list for PBXNativeTarget "ReactiveFoundation-watchOS" */ = {
 			isa = XCConfigurationList;
@@ -728,6 +725,7 @@
 				EC9549911BF1EEB5000FC2BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC95499C1BF1EEF8000FC2BF /* Build configuration list for PBXNativeTarget "ReactiveFoundation-OSX" */ = {
 			isa = XCConfigurationList;
@@ -736,6 +734,7 @@
 				EC95499E1BF1EEF8000FC2BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECBCCE381BEB6E2B00723476 /* Build configuration list for PBXProject "ReactiveFoundation" */ = {
 			isa = XCConfigurationList;
