@@ -63,12 +63,12 @@ public class RKKeyValueObservable<T>: NSObject, StreamType {
   }
   
   @warn_unused_result(message = "Key-Value observing is active as long as the disposable is alive and not disposed! Please store this disposable somewhere.")
-  public func observe(on context: ExecutionContext, sink: T -> ()) -> DisposableType {
+  public func observe(on context: ExecutionContext, observer: T -> ()) -> DisposableType {
     
     if self.observer == nil {
       self.observer = { e in
         context {
-          sink(e)
+          observer(e)
         }
       }
       self.object?.addObserver(self, forKeyPath: keyPath, options: options, context: &self.context)
