@@ -63,14 +63,20 @@ public class RKKeyValueObservable<T>: NSObject, StreamType {
   }
   
   @warn_unused_result(message = "Key-Value observing is active as long as the disposable is alive and not disposed! Please store this disposable somewhere.")
-  public func observe(on context: ExecutionContext, observer: T -> ()) -> DisposableType {
+  public func observe(on context: ExecutionContext? = nil, observer: T -> ()) -> DisposableType {
     
     if self.observer == nil {
-      self.observer = { e in
-        context {
-          observer(e)
+
+      if let context = context {
+        self.observer = { e in
+          context {
+            observer(e)
+          }
         }
+      } else {
+        self.observer = observer
       }
+
       self.object?.addObserver(self, forKeyPath: keyPath, options: options, context: &self.context)
     } else {
       fatalError("RKeyValueObserverStream does not support multiple observers! Please either use rValueForKeyPath() method to get another stream or `share` this stream as an `ActiveStream`.")
