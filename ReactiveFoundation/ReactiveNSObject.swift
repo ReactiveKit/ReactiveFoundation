@@ -84,7 +84,7 @@ public extension NSObject {
       r_associatedObservables[key] = observable
       
       observable
-        .observe { [weak self] (value: T) in
+        .observe(on: ImmediateOnMainExecutionContext) { [weak self] (value: T) in
           if let set = set {
             set(value)
           } else {
@@ -116,7 +116,7 @@ public extension NSObject {
       r_associatedObservables[key] = observable
       
       observable
-        .observe { [weak self] (value: T) in
+        .observe(on: ImmediateOnMainExecutionContext) { [weak self] (value: T) in
           if let set = set {
             set(value)
           } else {
