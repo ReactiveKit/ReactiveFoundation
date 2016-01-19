@@ -1,6 +1,6 @@
 # ReactiveFoundation
 
-ReactiveFoundation is a framework from ReactiveKit collection of frameworks that extends NSObject objects with type-safe KVO support and NSNotificationCentar with reactive observing mechanism. Consult ReactiveKit documentation to learn how to work with the Observables it provides.
+ReactiveFoundation is a framework from ReactiveKit collection of frameworks that extends NSObject objects with type-safe KVO support and NSNotificationCenter with reactive observing mechanism. Consult ReactiveKit documentation to learn how to work with the Observables it provides.
 
 ## Key-Value Observing
 
