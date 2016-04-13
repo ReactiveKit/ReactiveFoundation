@@ -1,6 +1,6 @@
 # ReactiveFoundation
 
-ReactiveFoundation is a framework from ReactiveKit collection of frameworks that extends NSObject objects with type-safe KVO support and NSNotificationCentar with reactive observing mechanism. Consult ReactiveKit documentation to learn how to work with the Observables it provides.
+ReactiveFoundation is a framework from ReactiveKit collection of frameworks that extends NSObject objects with type-safe KVO support and NSNotificationCenter with reactive observing mechanism. Consult ReactiveKit documentation to learn how to work with the Observables it provides.
 
 ## Key-Value Observing
 
@@ -25,7 +25,7 @@ NSNotificationCenter.defaultCenter().rNotification("MyNotification").observe { n
 
 ```
 
-> Make sure you always dispose observation when it's no longer necessary. Simples way it to put the disposable into the disposable bag on the object that has initiated observation.
+> Make sure you always dispose observation when it's no longer necessary. The simplet way is to put the disposable into the disposable bag on the object that has initiated observation.
 
 ### rBag
 
